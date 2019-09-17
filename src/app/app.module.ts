@@ -18,6 +18,7 @@ import { DishService } from './services/dish.service';
 import { PromotionService } from './services/promotion.service';
 import { LeaderService } from './services/leader.service';
 
+import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
 import { MatDialogModule } from '@angular/material/dialog';
 import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
@@ -31,6 +32,10 @@ import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatInputModule } from '@angular/material/input';
 import { MatCheckboxModule } from '@angular/material/checkbox';
 import { FormsModule } from '@angular/forms'; 
+import { MatSelectModule } from '@angular/material/select';
+import { MatSlideToggleModule } from '@angular/material/slide-toggle';
+import { ReactiveFormsModule } from '@angular/forms';
+
 
 
 
@@ -50,6 +55,8 @@ import { FormsModule } from '@angular/forms';
     BrowserModule,
 	BrowserAnimationsModule,
     MatToolbarModule,
+	MatSelectModule,
+    MatSlideToggleModule,
 	MatListModule,
     FlexLayoutModule,
 	MatGridListModule,
@@ -58,9 +65,11 @@ import { FormsModule } from '@angular/forms';
 	AppRoutingModule,
 	MatDialogModule,
 	MatFormFieldModule, 
+	MatProgressSpinnerModule,
     MatInputModule,
     MatCheckboxModule,
-	FormsModule
+	FormsModule,
+	ReactiveFormsModule
   ],
   
   entryComponents: [
